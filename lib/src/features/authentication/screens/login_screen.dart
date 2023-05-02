@@ -23,15 +23,15 @@ class LoginScreen extends StatelessWidget {
               padding: const EdgeInsets.all(tDefaultSize),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const FormHeaderWidget(
+                children: const [
+                  FormHeaderWidget(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     image: tLogoImage,
                     title: tLoginTitle,
                     subTitle: tLoginSubTitle,
                     imageHeight: 0.2,
                   ),
-                  const LoginForm(),
+                  LoginForm(),
                   LoginFooterWidget(),
                 ],
               ),

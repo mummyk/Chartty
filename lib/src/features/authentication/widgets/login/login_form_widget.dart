@@ -1,3 +1,4 @@
+import 'package:chartty/src/features/profile/screen/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
@@ -92,6 +93,8 @@ class LoginForm extends StatelessWidget {
                   //       controller.email.text.trim(),
                   //       controller.password.text.trim());
                   // }
+                  //TODO: Remove this
+                  Get.offAll(()=>const ProfileScreen());
                 },
                 child: Text(
                   tLogin.toUpperCase(),

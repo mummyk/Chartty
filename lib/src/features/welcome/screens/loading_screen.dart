@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../constants/lottie_constant.dart';
+import 'on_boarding_screen.dart';
 
 
 
@@ -36,6 +37,13 @@ class _LoadingScreensState extends State<LoadingScreens> {
   //     }
   //   });
   // }
+
+  //TODO: Remove this
+  void initState(){
+    super.initState();
+    Future.delayed(const Duration(seconds: 5), (){
+    Get.offAll(()=>const OnBoardingScreen());});
+  }
 
   @override
   Widget build(BuildContext context) {
